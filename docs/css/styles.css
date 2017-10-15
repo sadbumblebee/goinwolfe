@@ -1,0 +1,18 @@
+body {
+  font-family: filson-soft, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#comingSoon {
+  margin: auto;
+  width: 45%;
+  height: 50%;
+  background-color: gray;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
