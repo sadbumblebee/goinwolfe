@@ -1,18 +1,79 @@
 body {
-  font-family: filson-soft, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  color: #191919;
 }
 
-#comingSoon {
+h1 {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 4px dotted #27ae60;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 500;
+}
+
+#bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.fullscreen-bg-video {
+  max-width: none;
+  /*max-height: 100%;*/
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#comingsoon {
+  position: absolute;
   margin: auto;
   width: 45%;
-  height: 50%;
-  background-color: gray;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 5px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+#comingsoon-text {
+  padding: 20px 10px 10px 20px;
+}
+
+@media only screen and (max-width: 510px) {
+#comingsoon {
+  width: 95%;
+}
 
 }
