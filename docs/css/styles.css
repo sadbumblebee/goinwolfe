@@ -72,9 +72,17 @@ a:visited {
   padding: 30px 30px 40px 30px;
 }
 
-@media only screen and (max-width: 510) {
-#comingsoon {
-  width: 95%;
-}
-
+@media only screen and (max-width: 510px) {
+  #comingsoon {
+    width: 95%;
+  }
+  .fullscreen-bg-video {
+    visibility: collapse;
+    display: none;
+  }
+  #bg-video {
+    background-image: url(https://storage.googleapis.com/all-the-eyeballs/poster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
