@@ -1,2 +1,3 @@
-# #GoinWolfe Wedding
-A wedding website.
+# GoinWolfe
+
+## Wedding Website
